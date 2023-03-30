@@ -1,0 +1,135 @@
+main{
+  padding: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .main-content{
+  display: flex;
+  flex-direction: column;
+}
+
+main .main-content h2{
+  margin-bottom: 2%;
+  font-size: 2.2em;
+}
+main .main-content .text{
+  margin-bottom: 10%;
+}
+main .main-content .text p {
+  width: 75%;
+  font-size: 1.2em;
+  font-weight:300px;
+
+}
+
+main .techs .cards-container{
+  display: flex;
+  align-items: center;
+
+}
+
+main .techs .cards-container .card{
+  width: 85px;
+  height: 85px;
+  padding: 10px;
+  background-color: #eeee;
+  border-radius: 8px;
+  margin-right: 1.8em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.25s ease-in-out;
+}
+
+main .techs .cards-container .card img{
+  width: 80%;
+}
+
+main .techs .cards-container .card:hover{
+box-shadow: 0px 0px 8px blueviolet;
+}
+
+.main figure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main figure img{
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  margin-bottom: 6%;
+  border: 1px #1241ff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+main figure img:hover{
+  box-shadow: 0px 0px 6px #1241ff;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+}
+
+@media (max-width:1200px){
+  main{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main-content{
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15%;
+  }
+  main .techs .card-container .card, .techs{
+    text-align: center;
+  }
+  main .main-content .text p{
+      width: 100%;
+      font-size: 0.9em;
+  }
+
+  main .techs .card-container, .main-content .text p{
+    margin-top: 32px;
+  }
+}
+
+@media  (max-width:750px){
+    header{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header h1{
+      font-size: 2em;
+    }
+  header nav{
+    margin-top:24px ;
+  }
+  header nav a{
+    font-size: 1em;
+  }
+  main .techs .cards-container .card {
+    width: 60px;
+    height: 60px;
+
+  }
+  main .main-content .text h2, .main-content .techs h2{
+    font-size: 1.8em;
+  }
+  main figure img{
+    width: 250px;
+    height: 250px;
+  }
+}
